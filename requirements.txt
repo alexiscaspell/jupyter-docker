@@ -1,0 +1,5 @@
+oauthenticator
+jupyterhub-firstuseauthenticator
+jupyterhub-nativeauthenticator
+jupyter
+jupyterlab
