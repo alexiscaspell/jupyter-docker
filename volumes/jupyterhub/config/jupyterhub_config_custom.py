@@ -1033,6 +1033,8 @@ c.Spawner.default_url = '/lab'
 
 c.JupyterHub.authenticator_class = 'firstuseauthenticator.FirstUseAuthenticator'
 
+c.Spawner.notebook_dir = '/etc/jupyterhub/home'
+
 # c.NotebookApp.kernel_spec_manager_class = 'environment_kernels.EnvironmentKernelSpecManager'
 
 # c.FirstUseAuthenticator.create_users = True
