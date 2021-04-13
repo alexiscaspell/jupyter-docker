@@ -1012,6 +1012,7 @@
 
 import pwd
 import subprocess
+import os
 
 def pre_spawn_hook(spawner):
     username = spawner.user.name
@@ -1024,6 +1025,18 @@ def pre_spawn_hook(spawner):
         subprocess.check_call(['virtualenv ', 'venv'+username])
     except Exception as _:
         pass
+
+    try:
+        path = f"/home/{username}/.jupyter/lab/user-settings/@jupyterlab/apputils-extension"
+
+        os.makedirs(path)
+
+        with open(path+"/themes.jupyterlab-settings","w") as f:
+            f.write('{ "theme":"JupyterLab Dark" }')
+    except Exception as _:
+        pass
+
+    
     
 
 c.Spawner.pre_spawn_hook = pre_spawn_hook
