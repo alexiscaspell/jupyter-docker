@@ -1,4 +1,4 @@
-# jupyter-docker
+# JUPYTER-DOCKER
 
 > Entorno de trabajo de Jupyter Notebook con Python 3.8.
 
@@ -44,3 +44,7 @@
 * En la primera vez pide **user** y **pass**, ingresar los deseados para que se guarde, en los proximos logueos se tendra que usar los ingresados en esta primera vez
 
 * Dentro de la carpeta `./volumes/jupyterhub/` esta todo lo que se comparte con el contenedor, para trabajar hay que mover los archivos dentro de esa carpeta.
+
+* Para ejecutar una linea usar Ctrl+Enter y para ejecutar una linea y crear una debajo utilizar Shift+Enter.
+
+* Para borrar una linea usar pararse sobre esta, pulsar Esc y por ultimo 2 veces la tecla D.
