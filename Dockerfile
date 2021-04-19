@@ -13,7 +13,7 @@ RUN jupyterhub --generate-config
 
 COPY requirements.txt requirements.txt
 
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt --upgrade pip
 
 CMD jupyterhub -f jupyterhub_config.py
 
